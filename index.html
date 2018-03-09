@@ -67,17 +67,64 @@
          
                  function onVrViewLoad() {
                    // Selector '#vrview' finds element with id 'vrview'.
-                   var vrView = new VRView.Player('#vrview', {
+                   var vrView = new VRView.Player('#vrview3bedroom', {
                      image: 'img/3bedroom/Page44Liv360a.jpg',
                      width: 500,
                      is_stereo: false
                    });
                  }</script>
-               <div id='vrview'></div>
+               <div id='vrview3bedroom'></div>
                </div>
         </div>
-        <div class="tab-pane fade" id="gameroom" role="tabpanel" aria-labelledby="gameroom-tab">Game Room</div>
-        <div class="tab-pane fade" id="pool" role="tabpanel" aria-labelledby="pool-tab">Pool</div>
+        <div class="tab-pane fade" id="gameroom" role="tabpanel" aria-labelledby="gameroom-tab">Game Room
+            <div id="gameroom1" class="gameroom">
+                <script> 
+                 window.addEventListener('load', onVrViewLoad);
+         
+                 function onVrViewLoad() {
+                   // Selector '#vrview' finds element with id 'vrview'.
+                   var vrView = new VRView.Player('#vrviewgameroom', {
+                     image: 'img/gameroom.jpg',
+                     width: 500,
+                     is_stereo: false
+                   });
+                 }</script>
+               <div id='vrviewgameroom'></div>
+               </div>
+        </div>
+        <div class="tab-pane fade" id="pool" role="tabpanel" aria-labelledby="pool-tab">Pool
+            <div id="gameroom1" class="gameroom">
+                <script> 
+                 window.addEventListener('load', onVrViewLoad);
+         
+                 function onVrViewLoad() {
+                   // Selector '#vrview' finds element with id 'vrview'.
+                   var vrView = new VRView.Player('#vrviewpool', {
+                     image: 'img/Pool360.jpg',
+                     width: 500,
+                     is_stereo: false
+                   });
+                 }</script>
+               <div id='vrviewpool'></div>
+               </div>
+        </div>
+
+        <div class="tab-pane fade" id="roof" role="tabpanel" aria-labelledby="roof-tab">Roof
+            <div id="roof1" class="roof">
+                <script> 
+                 window.addEventListener('load', onVrViewLoad);
+         
+                 function onVrViewLoad() {
+                   // Selector '#vrview' finds element with id 'vrview'.
+                   var vrView = new VRView.Player('#vrviewroof', {
+                     image: 'img/Roof360.jpg',
+                     width: 500,
+                     is_stereo: false
+                   });
+                 }</script>
+               <div id='vrviewroof'></div>
+               </div>
+        </div>
       </div>
 
       <!-- 360VRView -->
