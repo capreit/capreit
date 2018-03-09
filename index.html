@@ -12,7 +12,8 @@
   </head>
   <body>
       <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
-    <ul class="nav nav-tabs">
+
+    <!-- <ul class="nav nav-tabs">
         <li class="nav-item">
           <a class="nav-link active" href="#1bedroom">1 Bedroom</a>
         </li>
@@ -28,17 +29,18 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Roof</a>
           </li>
-      </ul>
+      </ul> -->
 
       <!-- 360VRView -->
-      <div id="Page2liv"><script> 
+      <div id="Page2liv">
+          <h2>1 BedRoom </h2><script> 
           window.addEventListener('load', onVrViewLoad);
   
           function onVrViewLoad() {
             // Selector '#vrview' finds element with id 'vrview'.
             var vrView = new VRView.Player('#vrview', {
               image: 'img/Page2Liv360.jpg',
-              width: 500,
+              width: 750,
               is_stereo: false
             });
           }</script>
@@ -46,7 +48,6 @@
         </div>
 
       <div id="page2bed">
-       
         <script> 
         window.addEventListener('load', onVrViewLoad);
 
@@ -54,12 +55,28 @@
           // Selector '#vrview' finds element with id 'vrview'.
           var vrView = new VRView.Player('#vrview', {
             image: 'img/Page2bed360.jpeg',
-            width: 500,
+            width: 750,
             is_stereo: false
           });
         }</script>
       <div id='vrview'></div></div>
- 
+      <div id="page2bath"></div>
+          <P>
+       
+          <script> 
+          window.addEventListener('load', onVrViewLoad);
+  
+          function onVrViewLoad() {
+            // Selector '#vrview' finds element with id 'vrview'.
+            var vrView = new VRView.Player('#vrview', {
+              image: 'img/Page2bath360.jpeg',
+              width: 750,
+              is_stereo: false
+            });
+          }</script>
+        <div id='vrview'></P></div></div>
+
+
 
 
 
