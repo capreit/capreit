@@ -15,38 +15,19 @@
 
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="1bedroom-tab" data-toggle="tab" href="#1bedroom" role="tab" aria-controls="1bedroom" aria-selected="true">1 Bedroom</a>
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="3bedroom-tab" data-toggle="tab" href="#3bedroom" role="tab" aria-controls="3bedroom" aria-selected="false">3 Bedroom</a>
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="gameroom-tab" data-toggle="tab" href="#gameroom" role="tab" aria-controls="contact" aria-selected="false">Game Room</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pool-tab" data-toggle="tab" href="#pool" role="tab" aria-controls="pool" aria-selected="false">Pool<a/>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="roof-tab" data-toggle="tab" href="#roof" role="tab" aria-controls="roof" aria-selected="false">Roof<a/>
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
         </li>
       </ul>
-      <div class="tab-content" id="myTabContent2">
-        <div class="tab-pane fade show active" id="page29liv" role="tabpanel" aria-labelledby="page22liv-tab">
-          <ul class="nav nav-tabs" id="myTab2" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="page29liv-tab" data-toggle="tab" href="#page29liv" role="tab" aria-controls="1bedroom" aria-selected="true">Living Room</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" id="page29bed-tab" data-toggle="tab" href="#page29bed" role="tab" aria-controls="1bedroom" aria-selected="false">Bedroom</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="page29bath-tab" data-toggle="tab" href="#page29bath" role="tab" aria-controls="1bedroom" aria-selected="false">Bathroom</a>
-                  </li>
-
-
-
-         <div id="Page2liv" class="1bedroom">
-         <script> 
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Room 1 
+         <div id="Page2liv" class="">
+          <h2>1 BedRoom </h2><script> 
           window.addEventListener('load', onVrViewLoad);
   
           function onVrViewLoad() {
@@ -60,28 +41,28 @@
         <div id='vrview'></div>
         </div>
         </div>
-        <div class="tab-pane fade" id="3bedroom" role="tabpanel" aria-labelledby="3bedroom-tab">3 Bedroom
-            <div id="Page2liv" class="1bedroom">
-                <script> 
-                 window.addEventListener('load', onVrViewLoad);
-         
-                 function onVrViewLoad() {
-                   // Selector '#vrview' finds element with id 'vrview'.
-                   var vrView = new VRView.Player('#vrview', {
-                     image: 'img/3bedroom/Page44Liv360a.jpg',
-                     width: 500,
-                     is_stereo: false
-                   });
-                 }</script>
-               <div id='vrview'></div>
-               </div>
-        </div>
-        <div class="tab-pane fade" id="gameroom" role="tabpanel" aria-labelledby="gameroom-tab">Game Room</div>
-        <div class="tab-pane fade" id="pool" role="tabpanel" aria-labelledby="pool-tab">Pool</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Room 3</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Game Room</div>
       </div>
 
+
       <!-- 360VRView -->
-      <!-- <div id="page2bed">
+      <!-- <div id="Page2liv" class="">
+          <h2>1 BedRoom </h2><script> 
+          window.addEventListener('load', onVrViewLoad);
+  
+          function onVrViewLoad() {
+            // Selector '#vrview' finds element with id 'vrview'.
+            var vrView = new VRView.Player('#vrview', {
+              image: 'img/1bedroom/Page2Liv360.jpg',
+              width: 500,
+              is_stereo: false
+            });
+          }</script>
+        <div id='vrview'></div>
+        </div>
+
+      <div id="page2bed">
         <script> 
         window.addEventListener('load', onVrViewLoad);
 
